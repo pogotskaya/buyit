@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D5ADBB6192F8B650013D792 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5ADBB5192F8B650013D792 /* ListViewController.m */; };
+		4D5ADBB9192F8EC00013D792 /* ViewControllerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5ADBB8192F8EC00013D792 /* ViewControllerBase.m */; };
 		4D6B99C419015C740042EB7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6B99C319015C740042EB7E /* Foundation.framework */; };
 		4D6B99C619015C740042EB7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6B99C519015C740042EB7E /* CoreGraphics.framework */; };
 		4D6B99C819015C750042EB7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6B99C719015C750042EB7E /* UIKit.framework */; };
@@ -41,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D5ADBB4192F8B650013D792 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		4D5ADBB5192F8B650013D792 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		4D5ADBB7192F8EC00013D792 /* ViewControllerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerBase.h; sourceTree = "<group>"; };
+		4D5ADBB8192F8EC00013D792 /* ViewControllerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerBase.m; sourceTree = "<group>"; };
 		4D6B99C019015C740042EB7E /* buyIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = buyIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D6B99C319015C740042EB7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4D6B99C519015C740042EB7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,9 +138,13 @@
 				4D6B99D219015C750042EB7E /* AppDelegate.h */,
 				4D6B99D319015C750042EB7E /* AppDelegate.m */,
 				4D6B99D519015C750042EB7E /* Main_iPhone.storyboard */,
+				4D5ADBB4192F8B650013D792 /* ListViewController.h */,
+				4D5ADBB5192F8B650013D792 /* ListViewController.m */,
 				4D6B99D819015C750042EB7E /* Main_iPad.storyboard */,
 				4D6B99DB19015C750042EB7E /* ViewController.h */,
 				4D6B99DC19015C750042EB7E /* ViewController.m */,
+				4D5ADBB7192F8EC00013D792 /* ViewControllerBase.h */,
+				4D5ADBB8192F8EC00013D792 /* ViewControllerBase.m */,
 				4D6B99DE19015C750042EB7E /* Images.xcassets */,
 				4D6B99CA19015C750042EB7E /* Supporting Files */,
 				4D6B99FD190163DB0042EB7E /* ListItemView.xib */,
@@ -281,7 +291,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D6B99DD19015C750042EB7E /* ViewController.m in Sources */,
+				4D5ADBB9192F8EC00013D792 /* ViewControllerBase.m in Sources */,
 				4D6B99D419015C750042EB7E /* AppDelegate.m in Sources */,
+				4D5ADBB6192F8B650013D792 /* ListViewController.m in Sources */,
 				4D6B9A0D19016FB80042EB7E /* DataSource.m in Sources */,
 				4D6B99D019015C750042EB7E /* main.m in Sources */,
 				4D6B9A08190167A40042EB7E /* CreateListView.m in Sources */,
@@ -500,6 +512,7 @@
 				4D6B99F719015C750042EB7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D6B99F819015C750042EB7E /* Build configuration list for PBXNativeTarget "buyItTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +521,7 @@
 				4D6B99FA19015C750042EB7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

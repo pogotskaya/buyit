@@ -1,38 +1,39 @@
 //
-//  ViewController.m
+//  ViewControllerBase.m
 //  buyIt
 //
-//  Created by Alla Pogotskaya on 4/18/14.
+//  Created by Alla Pogotskaya on 5/23/14.
 //  Copyright (c) 2014 alla. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ViewControllerBase.h"
 #import "CreateListView.h"
 #import "ListItemView.h"
 #import "DataSource.h"
 
-/*static NSString *listItemReusedId = @"listItemViewId";
-static NSString *createListReusedId = @"createListViewId";*/
+static NSString *listItemReusedId = @"listItemViewId";
+static NSString *createListReusedId = @"createListViewId";
 
-@interface ViewController ()
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-/*@property (strong, nonatomic) DataSource *dataSource;*/
+@interface ViewControllerBase ()
+@property (strong, nonatomic) DataSource *dataSource;
 @end
 
-@implementation ViewController
+@implementation ViewControllerBase
+
 - (UITableView *) getTable
 {
-    return self.tableView;
+    return nil;
 }
-/*- (void)viewDidLoad
+
+- (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.tableView.dataSource = self;
-    self.tableView.delegate = self;
+    [self.getTable setDataSource: self];
+    [self.getTable setDelegate: self];
     self.dataSource = [DataSource new];
     
     for (int i = 0; i <= 5; i++) {
-        [self.tableView registerNib:[UINib nibWithNibName:@"ListItemView" bundle:nil] forCellReuseIdentifier:listItemReusedId];
+        [self.getTable registerNib:[UINib nibWithNibName:@"ListItemView" bundle:nil] forCellReuseIdentifier:listItemReusedId];
     }
     
 }
@@ -47,7 +48,7 @@ static NSString *createListReusedId = @"createListViewId";*/
     
     [cell.listNameButton setTitle: title forState:UIControlStateNormal];
     [cell.listNameButton addTarget:self action:@selector(listNameClicked:) forControlEvents:(UIControlEvents) UIControlEventTouchDown ];
-
+    
     return cell;
 }
 
@@ -71,6 +72,7 @@ static NSString *createListReusedId = @"createListViewId";*/
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 60;
-}*/
+}
+
 
 @end

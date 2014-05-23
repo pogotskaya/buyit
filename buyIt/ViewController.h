@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewControllerBase.h"
 
-@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface ViewController : ViewControllerBase //UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
