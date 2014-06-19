@@ -24,8 +24,6 @@ class ItemsViewController: ViewControllerBase {
     override func fillCell(cell: ListNameCellView, dataSoure: DataSource, indexPath: NSIndexPath!) {
         var title = dataSource.getListItems(selectedLabel.text)[indexPath.row]
         
-        //cell.listImage.image = [UIImage imageNamed: @"2 image"];
-        
         cell.nameButton.setTitle(title, forState: UIControlState.Normal)
         cell.nameButton.addTarget(self, action:Selector("cellSelected:") , forControlEvents:UIControlEvents.TouchDown)
     }

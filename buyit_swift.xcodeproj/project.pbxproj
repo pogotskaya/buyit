@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4D345589194B380800F99DC8 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D345588194B380800F99DC8 /* ItemsViewController.swift */; };
 		4D42971E1953686F0081EF8A /* ViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D42971D1953686F0081EF8A /* ViewControllerBase.swift */; };
+		4D5EA36C1953794900F7CA36 /* BuyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5EA36B1953794900F7CA36 /* BuyItem.swift */; };
+		4D5EA36E1953795400F7CA36 /* BuyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5EA36D1953795400F7CA36 /* BuyList.swift */; };
 		4D674D79194AFA8100D3D134 /* AddNewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D674D77194AFA8100D3D134 /* AddNewItemView.swift */; };
 		4D674D7A194AFA8100D3D134 /* AddNewItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D674D78194AFA8100D3D134 /* AddNewItemView.xib */; };
 		4D674D7C194AFD5C00D3D134 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D674D7B194AFD5C00D3D134 /* DataSource.swift */; };
@@ -35,6 +37,8 @@
 /* Begin PBXFileReference section */
 		4D345588194B380800F99DC8 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		4D42971D1953686F0081EF8A /* ViewControllerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerBase.swift; sourceTree = "<group>"; };
+		4D5EA36B1953794900F7CA36 /* BuyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyItem.swift; sourceTree = "<group>"; };
+		4D5EA36D1953795400F7CA36 /* BuyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyList.swift; sourceTree = "<group>"; };
 		4D674D77194AFA8100D3D134 /* AddNewItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewItemView.swift; sourceTree = "<group>"; };
 		4D674D78194AFA8100D3D134 /* AddNewItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewItemView.xib; sourceTree = "<group>"; };
 		4D674D7B194AFD5C00D3D134 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
@@ -71,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D5EA3681953775100F7CA36 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				4D5EA36B1953794900F7CA36 /* BuyItem.swift */,
+				4D5EA36D1953795400F7CA36 /* BuyList.swift */,
+			);
+			name = ManagedObjects;
+			sourceTree = "<group>";
+		};
 		4DE7D3A7194AE45000D7B7A1 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +105,7 @@
 		4DE7D3B2194AE45100D7B7A1 /* buyit_swift */ = {
 			isa = PBXGroup;
 			children = (
+				4D5EA3681953775100F7CA36 /* ManagedObjects */,
 				4DE7D3B5194AE45100D7B7A1 /* AppDelegate.swift */,
 				4D42971D1953686F0081EF8A /* ViewControllerBase.swift */,
 				4DE7D3BA194AE45100D7B7A1 /* ViewController.swift */,
@@ -238,9 +252,11 @@
 			files = (
 				4D674D7C194AFD5C00D3D134 /* DataSource.swift in Sources */,
 				4DE7D3BB194AE45100D7B7A1 /* ViewController.swift in Sources */,
+				4D5EA36E1953795400F7CA36 /* BuyList.swift in Sources */,
 				4D674D79194AFA8100D3D134 /* AddNewItemView.swift in Sources */,
 				4DE7D3B6194AE45100D7B7A1 /* AppDelegate.swift in Sources */,
 				4D345589194B380800F99DC8 /* ItemsViewController.swift in Sources */,
+				4D5EA36C1953794900F7CA36 /* BuyItem.swift in Sources */,
 				4D42971E1953686F0081EF8A /* ViewControllerBase.swift in Sources */,
 				4DA35869194AF6A300E4206E /* ListNameCellView.swift in Sources */,
 				4DE7D3B9194AE45100D7B7A1 /* buyit_swift.xcdatamodeld in Sources */,
